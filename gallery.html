@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Gallery</title>
+    <style>
+        body {
+            background-image: url("E:/Revisi Matkul Semester 9/Pemrograman Web 1/Tugas Pertemuan 4/Tugas Elearning/Folder Gambar/kontak.png");
+            background-repeat: auto;
+            background-size: 3000px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+            margin: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <font color="white">
+        <center>
+            <h2>Gallery Untuk Menampilkan gambar beberapa Logo bahasa Pemrograman </h2>
+        </center>
+    </font>
+    <div class="gallery">
+        <img src="gambar/html.png" alt="Gambar 1">
+        <img src="gambar/php.png" alt="Gambar 2">
+        <img src="gambar/javascript.png" alt="Gambar 3">
+        <img src="gambar/java.png" alt="Gambar 4">
+    </div>
+    <a href="home.html"><button type="menu">Home</a></button>
+</body>
+
+</html>
